@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Monash Taxi | Book A Maxi Taxi</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="navbar">
+
+
+<div class="logo">
+
+<i class="fa-solid fa-van-shuttle"></i>
+
+Monash Taxi
+
+</div>
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="fleet.html">Fleet</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="booking.html">Book</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+<button class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+
+<section class="page-banner">
+
+
+<h1>
+
+Book Your Maxi Taxi
+
+</h1>
+
+
+<p>
+
+Request a comfortable and reliable ride with Monash Taxi.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="booking-container">
+
+
+
+<form class="big-booking-form" id="maxiBookingForm">
+
+
+
+<h2>
+
+Passenger Details
+
+</h2>
+
+
+
+<div class="form-row">
+
+
+<input 
+type="text"
+placeholder="Full Name"
+required
+>
+
+
+
+<input
+type="tel"
+placeholder="Phone Number"
+required
+>
+
+
+</div>
+
+
+
+
+
+<h2>
+
+Journey Details
+
+</h2>
+
+
+
+<input
+type="text"
+placeholder="Pickup Address"
+required
+>
+
+
+
+<input
+type="text"
+placeholder="Destination"
+required
+>
+
+
+
+
+
+<div class="form-row">
+
+
+<div>
+
+<label>
+Pickup Date
+</label>
+
+<input
+type="date"
+required
+>
+
+</div>
+
+
+
+<div>
+
+<label>
+Pickup Time
+</label>
+
+<input
+type="time"
+required
+>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<h2>
+
+Vehicle Requirements
+
+</h2>
+
+
+
+<label>
+Number of Passengers
+</label>
+
+
+<input
+type="number"
+placeholder="Example: 4"
+min="1"
+required
+>
+
+
+
+
+
+<div class="options">
+
+
+<label>
+
+<input type="checkbox">
+
+♿ Wheelchair Required
+
+</label>
+
+
+
+<label>
+
+<input type="checkbox">
+
+✈ Airport Transfer
+
+</label>
+
+
+
+<label>
+
+<input type="checkbox">
+
+🧳 Extra Luggage
+
+</label>
+
+
+</div>
+
+
+
+
+
+
+
+
+<textarea
+
+placeholder="Additional information (optional)"
+
+rows="5"
+
+></textarea>
+
+
+
+
+
+
+
+<button class="btn primary" type="submit">
+
+Request Booking
+
+</button>
+
+
+
+</form>
+
+
+
+
+
+<div class="booking-info">
+
+
+<h2>
+
+Why Book With Us?
+
+</h2>
+
+
+<div>
+
+<i class="fa-solid fa-wheelchair"></i>
+
+<p>
+Accessible Maxi Taxi vehicles
+</p>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-clock"></i>
+
+<p>
+24/7 availability
+</p>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-user-shield"></i>
+
+<p>
+Professional drivers
+</p>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-location-dot"></i>
+
+<p>
+Melbourne wide service
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="dark section">
+
+
+<h2>
+
+Booking Process
+
+</h2>
+
+
+<div class="services">
+
+
+<div>
+
+<i class="fa-solid fa-1"></i>
+
+<h3>
+Submit Request
+</h3>
+
+<p>
+Tell us your travel details.
+</p>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-2"></i>
+
+<h3>
+Confirmation
+</h3>
+
+<p>
+Our team confirms your booking.
+</p>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-3"></i>
+
+<h3>
+Enjoy Your Ride
+</h3>
+
+<p>
+Your Maxi Taxi arrives on time.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+© 2026 Monash Taxi. All Rights Reserved.
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+
+const form = document.getElementById("maxiBookingForm");
+
+
+form.addEventListener("submit", function(e){
+
+
+e.preventDefault();
+
+
+
+alert(
+
+"🚐 Booking Request Sent!\n\n" +
+
+"Thank you for choosing Monash Taxi.\n\n" +
+
+"Our team will contact you shortly to confirm your trip."
+
+);
+
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
