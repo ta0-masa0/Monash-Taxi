@@ -12,7 +12,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
 
-if(menuBtn){
+if(menuBtn && navLinks){
 
     menuBtn.addEventListener("click",()=>{
 
@@ -24,17 +24,14 @@ if(menuBtn){
 
 
 
+/* Close mobile menu after clicking a link */
+
+const navItems = document.querySelectorAll(".nav-links a");
 
 
-/* Close menu after clicking link */
+navItems.forEach(item=>{
 
-const links = document.querySelectorAll(".nav-links a");
-
-
-links.forEach(link=>{
-
-
-    link.addEventListener("click",()=>{
+    item.addEventListener("click",()=>{
 
         if(navLinks){
 
@@ -43,7 +40,6 @@ links.forEach(link=>{
         }
 
     });
-
 
 });
 
@@ -63,21 +59,18 @@ const bookingForm = document.getElementById("maxiBookingForm");
 
 if(bookingForm){
 
-
     bookingForm.addEventListener("submit",(event)=>{
-
 
         event.preventDefault();
 
 
-
         alert(
 
-        "🚐 Booking Request Submitted!\n\n" +
+        "🚕 Booking Request Submitted!\n\n" +
 
         "Thank you for choosing Monash Taxi.\n\n" +
 
-        "Our team will contact you shortly to confirm your Maxi Taxi booking."
+        "Our team will contact you shortly to confirm your booking."
 
         );
 
@@ -86,7 +79,6 @@ if(bookingForm){
 
 
     });
-
 
 }
 
@@ -106,21 +98,18 @@ const contactForm = document.querySelector(".contact-form");
 
 if(contactForm){
 
-
     contactForm.addEventListener("submit",(event)=>{
 
-
         event.preventDefault();
-
 
 
         alert(
 
         "✅ Message Sent!\n\n" +
 
-        "Thank you for contacting Monash Taxi.\n" +
+        "Thank you for contacting Monash Taxi.\n\n" +
 
-        "We will get back to you soon."
+        "Our team will get back to you soon."
 
         );
 
@@ -129,7 +118,6 @@ if(contactForm){
 
 
     });
-
 
 }
 
@@ -144,51 +132,59 @@ if(contactForm){
 ========================= */
 
 
-const animatedItems = document.querySelectorAll(
+const animatedElements = document.querySelectorAll(
 
-".card, .contact-card, .hero-card, .services div"
+    ".card, .contact-card, .hero-card, .services div, .hours-box"
 
 );
 
 
 
-const observer = new IntersectionObserver((entries)=>{
+if(animatedElements.length > 0){
 
 
-entries.forEach(entry=>{
+    const observer = new IntersectionObserver((entries)=>{
 
 
-    if(entry.isIntersecting){
+        entries.forEach(entry=>{
 
 
-        entry.target.classList.add("show");
+            if(entry.isIntersecting){
 
 
-    }
+                entry.target.classList.add("show");
 
 
-});
+            }
 
 
-},
-{
-
-threshold:0.15
-
-});
+        });
 
 
-
-animatedItems.forEach(item=>{
-
-
-    item.classList.add("hidden");
+    },
 
 
-    observer.observe(item);
+    {
+
+        threshold:0.15
+
+    });
 
 
-});
+
+    animatedElements.forEach(element=>{
+
+
+        element.classList.add("hidden");
+
+
+        observer.observe(element);
+
+
+    });
+
+
+}
 
 
 
@@ -201,20 +197,21 @@ animatedItems.forEach(item=>{
 ========================= */
 
 
-const footerYear = document.querySelector("footer p");
+const footerText = document.querySelector("footer p");
 
 
-if(footerYear){
+if(footerText){
 
 
-    const year = new Date().getFullYear();
+    const currentYear = new Date().getFullYear();
 
 
-    footerYear.innerHTML =
+    footerText.innerHTML = footerText.innerHTML.replace(
 
-    footerYear.innerHTML.replace(
-        "2026",
-        year
+        /\d{4}/,
+
+        currentYear
+
     );
 
 
