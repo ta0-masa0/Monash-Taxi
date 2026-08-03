@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Monash Taxi | Book A Maxi Taxi</title>
+<title>Monash Taxi | Book Your Ride</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,483 +16,290 @@
 
 </head>
 
-
 <body>
-
 
 <header>
 
 <nav class="navbar">
 
-
 <div class="logo">
-
 <i class="fa-solid fa-van-shuttle"></i>
-
 Monash Taxi
-
 </div>
 
-
 <ul class="nav-links">
-
 <li><a href="index.html">Home</a></li>
-
 <li><a href="fleet.html">Fleet</a></li>
-
 <li><a href="services.html">Services</a></li>
-
 <li><a href="booking.html">Book</a></li>
-
 <li><a href="contact.html">Contact</a></li>
-
 </ul>
 
-
 <button class="menu-btn">
-
 <i class="fa-solid fa-bars"></i>
-
 </button>
-
 
 </nav>
 
 </header>
 
-
-
-
-
-
 <section class="page-banner">
 
-
-<h1>
-
-Book Your Maxi Taxi
-
-</h1>
-
+<h1>Book Your Ride</h1>
 
 <p>
-
-Request a comfortable and reliable ride with Monash Taxi.
-
+Book a Sedan Taxi, Standard Maxi Taxi or Wheelchair Accessible Taxi anywhere in Melbourne.
 </p>
-
 
 </section>
 
-
-
-
-
-
-
-
 <section class="section">
-
 
 <div class="booking-container">
 
-
-
 <form class="big-booking-form" id="maxiBookingForm">
 
-
-
-<h2>
-
-Passenger Details
-
-</h2>
-
-
+<h2>Passenger Details</h2>
 
 <div class="form-row">
 
-
-<input 
+<input
 type="text"
 placeholder="Full Name"
-required
->
-
-
+required>
 
 <input
 type="tel"
 placeholder="Phone Number"
-required
->
-
+required>
 
 </div>
 
+<input
+type="email"
+placeholder="Email Address (Optional)">
 
-
-
-
-<h2>
-
-Journey Details
-
-</h2>
-
-
+<h2>Journey Details</h2>
 
 <input
 type="text"
 placeholder="Pickup Address"
-required
->
-
-
+required>
 
 <input
 type="text"
 placeholder="Destination"
-required
->
-
-
-
-
+required>
 
 <div class="form-row">
 
-
 <div>
 
-<label>
-Pickup Date
-</label>
+<label>Pickup Date</label>
 
 <input
 type="date"
-required
->
+required>
 
 </div>
 
-
-
 <div>
 
-<label>
-Pickup Time
-</label>
+<label>Pickup Time</label>
 
 <input
 type="time"
-required
->
+required>
 
 </div>
 
-
-
 </div>
 
+<h2>Vehicle Selection</h2>
 
+<select required>
 
+<option value="">Select Vehicle</option>
 
+<option>Standard Maxi Taxi</option>
 
+<option>Sedan Taxi</option>
 
+<option>Wheelchair Accessible Taxi</option>
 
+</select>
 
-<h2>
+<h2>Trip Details</h2>
 
-Vehicle Requirements
-
-</h2>
-
-
-
-<label>
-Number of Passengers
-</label>
-
+<label>Number of Passengers</label>
 
 <input
 type="number"
-placeholder="Example: 4"
 min="1"
-required
->
-
-
-
-
+placeholder="Example: 4"
+required>
 
 <div class="options">
 
-
 <label>
-
 <input type="checkbox">
-
-♿ Wheelchair Required
-
+Wheelchair Assistance Required
 </label>
 
-
-
 <label>
-
 <input type="checkbox">
-
-✈ Airport Transfer
-
+Extra Luggage
 </label>
 
-
-
 <label>
-
 <input type="checkbox">
-
-🧳 Extra Luggage
-
+Child Seat Required
 </label>
-
 
 </div>
 
-
-
-
-
-
-
-
 <textarea
-
-placeholder="Additional information (optional)"
-
 rows="5"
-
-></textarea>
-
-
-
-
-
-
+placeholder="Additional Information (Optional)">
+</textarea>
 
 <button class="btn primary" type="submit">
-
 Request Booking
-
 </button>
-
-
 
 </form>
 
-
-
-
-
 <div class="booking-info">
 
-
-<h2>
-
-Why Book With Us?
-
-</h2>
-
-
-<div>
-
-<i class="fa-solid fa-wheelchair"></i>
-
-<p>
-Accessible Maxi Taxi vehicles
-</p>
-
-</div>
-
-
+<h2>Why Book With Monash Taxi?</h2>
 
 <div>
 
 <i class="fa-solid fa-clock"></i>
 
 <p>
-24/7 availability
+24 Hours, 7 Days a Week
 </p>
 
 </div>
 
+<div>
 
+<i class="fa-solid fa-car-side"></i>
+
+<p>
+Sedan & Maxi Taxi Fleet
+</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-wheelchair"></i>
+
+<p>
+Wheelchair Accessible Vehicles
+</p>
+
+</div>
 
 <div>
 
 <i class="fa-solid fa-user-shield"></i>
 
 <p>
-Professional drivers
+Professional Drivers
 </p>
 
 </div>
-
-
 
 <div>
 
 <i class="fa-solid fa-location-dot"></i>
 
 <p>
-Melbourne wide service
+Melbourne Wide Service
 </p>
 
 </div>
 
-
-
 </div>
 
-
-
 </div>
-
-
 
 </section>
-
-
-
-
-
-
 
 <section class="dark section">
 
-
-<h2>
-
-Booking Process
-
+<h2 class="section-title">
+How Booking Works
 </h2>
-
 
 <div class="services">
 
-
 <div>
 
-<i class="fa-solid fa-1"></i>
+<i class="fa-solid fa-file-signature"></i>
 
-<h3>
-Submit Request
-</h3>
+<h3>1. Submit Your Request</h3>
 
 <p>
-Tell us your travel details.
+Complete the booking form with your travel details.
 </p>
 
 </div>
 
-
-
 <div>
 
-<i class="fa-solid fa-2"></i>
+<i class="fa-solid fa-phone-volume"></i>
 
-<h3>
-Confirmation
-</h3>
+<h3>2. We Confirm</h3>
 
 <p>
-Our team confirms your booking.
+Our team will contact you to confirm your booking.
 </p>
 
 </div>
 
-
-
 <div>
 
-<i class="fa-solid fa-3"></i>
+<i class="fa-solid fa-taxi"></i>
 
-<h3>
-Enjoy Your Ride
-</h3>
+<h3>3. Enjoy Your Ride</h3>
 
 <p>
-Your Maxi Taxi arrives on time.
+Your driver arrives on time for a safe and comfortable journey.
 </p>
 
 </div>
 
-
-
 </div>
-
 
 </section>
 
+<section class="cta">
 
+<h2>Ready to Travel?</h2>
 
+<p>
+Book your next ride with Monash Taxi today.
+</p>
 
+<a href="contact.html" class="btn primary">
+Contact Us
+</a>
 
-
+</section>
 
 <footer>
 
-
 <p>
-
 © 2026 Monash Taxi. All Rights Reserved.
-
 </p>
-
 
 </footer>
 
-
-
-
-
-
 <script src="script.js"></script>
-
-
-<script>
-
-
-const form = document.getElementById("maxiBookingForm");
-
-
-form.addEventListener("submit", function(e){
-
-
-e.preventDefault();
-
-
-
-alert(
-
-"🚐 Booking Request Sent!\n\n" +
-
-"Thank you for choosing Monash Taxi.\n\n" +
-
-"Our team will contact you shortly to confirm your trip."
-
-);
-
-
-
-});
-
-
-
-</script>
-
-
 
 </body>
 
