@@ -3,29 +3,32 @@
 ========================= */
 
 
-* {
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 
-html {
+html{
     scroll-behavior:smooth;
 }
 
 
-body {
+body{
 
     color:#222;
+
     background:#fff;
 
 }
 
 
-a {
+a{
+
     text-decoration:none;
+
 }
 
 
@@ -37,11 +40,12 @@ a {
 ========================= */
 
 
-.navbar {
+.navbar{
 
     position:fixed;
 
     top:0;
+
     width:100%;
 
     display:flex;
@@ -60,7 +64,7 @@ a {
 
 
 
-.logo {
+.logo{
 
     color:#ffd000;
 
@@ -72,7 +76,7 @@ a {
 
 
 
-.logo i {
+.logo i{
 
     margin-right:8px;
 
@@ -80,7 +84,7 @@ a {
 
 
 
-.nav-links {
+.nav-links{
 
     display:flex;
 
@@ -92,7 +96,7 @@ a {
 
 
 
-.nav-links a {
+.nav-links a{
 
     color:white;
 
@@ -104,7 +108,7 @@ a {
 
 
 
-.nav-links a:hover {
+.nav-links a:hover{
 
     color:#ffd000;
 
@@ -112,7 +116,7 @@ a {
 
 
 
-.menu-btn {
+.menu-btn{
 
     display:none;
 
@@ -137,45 +141,63 @@ a {
 ========================= */
 
 
-.hero {
+.hero{
 
 
     min-height:100vh;
 
+
     padding:130px 8% 60px;
+
 
     display:flex;
 
+
     justify-content:space-between;
+
 
     align-items:center;
 
 
+    gap:40px;
+
+
+
     background:
 
+
     linear-gradient(
-    rgba(0,0,0,.7),
-    rgba(0,0,0,.7)
+
+    rgba(0,0,0,.75),
+
+    rgba(0,0,0,.75)
+
     ),
 
+
     url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2")
+
     center/cover;
+
 
 
     color:white;
 
-}
-
-
-
-.hero-content {
-
-    max-width:600px;
 
 }
 
 
-.hero-content h1 {
+
+
+.hero-content{
+
+    max-width:650px;
+
+}
+
+
+
+.hero-content h1{
 
     font-size:55px;
 
@@ -185,7 +207,7 @@ a {
 
 
 
-.hero-content span {
+.hero-content span{
 
     color:#ffd000;
 
@@ -193,13 +215,16 @@ a {
 
 
 
-.hero-content p {
+.hero-content p{
 
     margin:20px 0;
 
     font-size:18px;
 
+    line-height:1.7;
+
 }
+
 
 
 
@@ -211,13 +236,13 @@ a {
 ========================= */
 
 
-.btn {
+.btn{
 
     display:inline-block;
 
-    padding:14px 30px;
+    padding:14px 32px;
 
-    border-radius:30px;
+    border-radius:50px;
 
     font-weight:600;
 
@@ -227,7 +252,7 @@ a {
 
 
 
-.primary {
+.primary{
 
     background:#ffd000;
 
@@ -237,7 +262,7 @@ a {
 
 
 
-.primary:hover {
+.primary:hover{
 
     background:white;
 
@@ -247,7 +272,7 @@ a {
 
 
 
-.secondary {
+.secondary{
 
     border:2px solid white;
 
@@ -259,7 +284,7 @@ a {
 
 
 
-.secondary:hover {
+.secondary:hover{
 
     background:white;
 
@@ -272,31 +297,41 @@ a {
 
 
 
+
 /* =========================
    HERO CARD
 ========================= */
 
 
-.hero-card {
+.hero-card{
 
 
     background:white;
 
+
     color:#222;
+
 
     padding:35px;
 
+
     border-radius:20px;
+
 
     width:380px;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.4);
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.4);
+
 
 }
 
 
 
-.hero-card h2 {
+
+.hero-card h2{
 
     margin-bottom:25px;
 
@@ -304,7 +339,7 @@ a {
 
 
 
-.feature {
+.feature{
 
     display:flex;
 
@@ -318,7 +353,7 @@ a {
 
 
 
-.feature i {
+.feature i{
 
     color:#ffd000;
 
@@ -331,36 +366,48 @@ a {
 
 
 
+
 /* =========================
    PAGE BANNER
 ========================= */
 
 
-.page-banner {
+.page-banner{
 
 
     padding:160px 8% 80px;
 
+
     text-align:center;
+
+
 
     background:
 
+
     linear-gradient(
+
     rgba(0,0,0,.7),
+
     rgba(0,0,0,.7)
+
     ),
 
+
     url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d")
+
     center/cover;
 
 
+
     color:white;
+
 
 }
 
 
 
-.page-banner h1 {
+.page-banner h1{
 
     font-size:45px;
 
@@ -370,7 +417,7 @@ a {
 
 
 
-.page-banner p {
+.page-banner p{
 
     margin-top:15px;
 
@@ -389,7 +436,7 @@ a {
 ========================= */
 
 
-.section {
+.section{
 
     padding:80px 8%;
 
@@ -399,7 +446,7 @@ a {
 
 
 
-.section-title {
+.section-title{
 
     font-size:35px;
 
@@ -409,13 +456,14 @@ a {
 
 
 
-.dark {
+.dark{
 
     background:#111;
 
     color:white;
 
 }
+
 
 
 
@@ -427,12 +475,14 @@ a {
 ========================= */
 
 
-.cards {
+.cards{
 
 
     display:grid;
 
+
     grid-template-columns:
+
     repeat(auto-fit,minmax(280px,1fr));
 
 
@@ -443,64 +493,146 @@ a {
 
 
 
-.card {
+
+.card{
 
 
     background:white;
 
+
     padding:35px;
+
 
     border-radius:20px;
 
+
     box-shadow:
+
+
     0 10px 30px rgba(0,0,0,.1);
+
 
 
     transition:.3s;
 
+
 }
 
 
 
-.card:hover {
+.card:hover{
+
 
     transform:translateY(-10px);
 
+
 }
 
 
 
-.card i {
+
+.card i{
 
 
     color:#ffd000;
 
-    font-size:40px;
+
+    font-size:45px;
+
 
     margin-bottom:20px;
+
 
 }
 
 
 
-.card ul {
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+    line-height:1.7;
+
+    color:#555;
+
+}
+
+
+
+.card ul{
 
 
     list-style:none;
 
+
     text-align:left;
 
+
     margin:20px 0;
+
 
 }
 
 
 
-.card li {
+.card li{
 
     margin:10px 0;
 
 }
+
+
+
+
+
+
+
+/* =========================
+   FLEET ICONS
+========================= */
+
+
+.fleet-card i{
+
+
+    color:#ffd000;
+
+
+    font-size:55px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.fleet-card h3{
+
+
+    font-size:24px;
+
+
+}
+
+
+
+.fleet-card ul{
+
+
+    margin-top:20px;
+
+
+}
+
 
 
 
@@ -512,56 +644,52 @@ a {
 ========================= */
 
 
-.services {
+.services{
 
 
     display:grid;
 
+
     grid-template-columns:
+
     repeat(auto-fit,minmax(220px,1fr));
+
 
     gap:30px;
 
+
 }
 
 
 
-.services i {
+.services i{
+
 
     color:#ffd000;
 
+
     font-size:40px;
 
+
 }
-
-
-
-
-
-
-
 /* =========================
    BOOKING PAGE
 ========================= */
 
 
-.booking-container {
-
+.booking-container{
 
     display:grid;
 
-    grid-template-columns:
-    2fr 1fr;
+    grid-template-columns:2fr 1fr;
 
     gap:40px;
-
 
 }
 
 
 
-.big-booking-form {
-
+.big-booking-form{
 
     background:white;
 
@@ -570,14 +698,14 @@ a {
     border-radius:20px;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,.1);
 
+    0 10px 30px rgba(0,0,0,.1);
 
 }
 
 
 
-.big-booking-form h2 {
+.big-booking-form h2{
 
     margin:25px 0;
 
@@ -586,8 +714,8 @@ a {
 
 
 .big-booking-form input,
-.big-booking-form textarea {
-
+.big-booking-form textarea,
+.big-booking-form select{
 
     width:100%;
 
@@ -599,11 +727,24 @@ a {
 
     border:1px solid #ddd;
 
+    font-size:16px;
+
 }
 
 
 
-.form-row {
+.big-booking-form input:focus,
+.big-booking-form textarea:focus{
+
+    outline:none;
+
+    border-color:#ffd000;
+
+}
+
+
+
+.form-row{
 
     display:flex;
 
@@ -613,8 +754,7 @@ a {
 
 
 
-.options {
-
+.options{
 
     text-align:left;
 
@@ -624,18 +764,17 @@ a {
 
 
 
-.options label {
+.options label{
 
     display:block;
 
-    margin:15px;
+    margin:15px 0;
 
 }
 
 
 
-.booking-info {
-
+.booking-info{
 
     background:#111;
 
@@ -649,7 +788,7 @@ a {
 
 
 
-.booking-info i {
+.booking-info i{
 
     color:#ffd000;
 
@@ -664,17 +803,18 @@ a {
 
 
 
+
 /* =========================
-   CONTACT
+   CONTACT PAGE
 ========================= */
 
 
-.contact-grid {
-
+.contact-grid{
 
     display:grid;
 
     grid-template-columns:
+
     repeat(auto-fit,minmax(250px,1fr));
 
     gap:30px;
@@ -683,22 +823,33 @@ a {
 
 
 
-.contact-card {
-
-
-    padding:35px;
+.contact-card{
 
     background:white;
 
+    padding:35px;
+
     border-radius:20px;
 
-    box-shadow:0 10px 30px #ddd;
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
 
 }
 
 
 
-.contact-card i {
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.contact-card i{
 
     color:#ffd000;
 
@@ -710,8 +861,7 @@ a {
 
 
 
-.contact-form {
-
+.contact-form{
 
     max-width:600px;
 
@@ -722,8 +872,7 @@ a {
 
 
 .contact-form input,
-.contact-form textarea {
-
+.contact-form textarea{
 
     width:100%;
 
@@ -739,8 +888,20 @@ a {
 
 
 
-.urgent-box {
+.contact-form input:focus,
+.contact-form textarea:focus{
 
+    outline:none;
+
+    box-shadow:
+
+    0 0 10px rgba(255,208,0,.5);
+
+}
+
+
+
+.urgent-box{
 
     background:#111;
 
@@ -754,7 +915,7 @@ a {
 
 
 
-.urgent-box i {
+.urgent-box i{
 
     color:#ffd000;
 
@@ -767,13 +928,13 @@ a {
 
 
 
+
 /* =========================
    HOURS
 ========================= */
 
 
-.hours-box {
-
+.hours-box{
 
     background:#111;
 
@@ -789,11 +950,13 @@ a {
 
 
 
-.hours-box h3 {
+.hours-box h3{
 
     color:#ffd000;
 
 }
+
+
 
 
 
@@ -804,8 +967,7 @@ a {
 ========================= */
 
 
-.cta {
-
+.cta{
 
     background:#ffd000;
 
@@ -817,11 +979,19 @@ a {
 
 
 
-.cta h2 {
+.cta h2{
 
     font-size:35px;
 
     margin-bottom:15px;
+
+}
+
+
+
+.cta p{
+
+    margin-bottom:25px;
 
 }
 
@@ -836,8 +1006,7 @@ a {
 ========================= */
 
 
-footer {
-
+footer{
 
     background:#000;
 
@@ -845,7 +1014,15 @@ footer {
 
     text-align:center;
 
-    padding:25px;
+    padding:30px;
+
+}
+
+
+
+footer p{
+
+    opacity:.8;
 
 }
 
@@ -856,15 +1033,45 @@ footer {
 
 
 /* =========================
-   MOBILE
+   ANIMATIONS
+========================= */
+
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s;
+
+}
+
+
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
 ========================= */
 
 
 @media(max-width:900px){
 
 
-.nav-links {
-
+.nav-links{
 
     position:absolute;
 
@@ -888,7 +1095,7 @@ footer {
 
 
 
-.nav-links.active {
+.nav-links.active{
 
     display:flex;
 
@@ -896,7 +1103,7 @@ footer {
 
 
 
-.menu-btn {
+.menu-btn{
 
     display:block;
 
@@ -904,20 +1111,19 @@ footer {
 
 
 
-.hero {
-
+.hero{
 
     flex-direction:column;
 
-    gap:40px;
-
     text-align:center;
+
+    padding-top:120px;
 
 }
 
 
 
-.hero-content h1 {
+.hero-content h1{
 
     font-size:40px;
 
@@ -925,7 +1131,7 @@ footer {
 
 
 
-.hero-card {
+.hero-card{
 
     width:100%;
 
@@ -933,8 +1139,7 @@ footer {
 
 
 
-.booking-container {
-
+.booking-container{
 
     grid-template-columns:1fr;
 
@@ -942,8 +1147,7 @@ footer {
 
 
 
-.form-row {
-
+.form-row{
 
     flex-direction:column;
 
@@ -951,11 +1155,84 @@ footer {
 
 
 
-.secondary {
+.secondary{
 
     margin-left:0;
 
     margin-top:15px;
+
+}
+
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.section{
+
+    padding:60px 5%;
+
+}
+
+
+
+.page-banner h1{
+
+    font-size:35px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+
+
+.btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.services{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.cta{
+
+    padding:45px 20px;
 
 }
 
